@@ -1,0 +1,17 @@
+{
+  "name": "sanjai-sankar-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio of Sanjai Sankar - MERN Stack Developer & Digital Marketer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "mern-stack",
+    "developer",
+    "web-development"
+  ],
+  "author": "Sanjai Sankar",
+  "license": "MIT"
+}

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Sanjai Sankar - MERN Stack Developer & Digital Marketer. Explore modern full-stack web applications, growth marketing strategies, projects, and skills.">
+  <title>Sanjai Sankar | MERN Stack Developer & Digital Marketer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="dark-theme">
+  <!-- Global Ambient Cursor Spotlight -->
+  <div class="cursor-spotlight"></div>
+
+  <!-- Background Ambient Glows -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Navigation Bar -->
+  <header id="main-header">
+    <div class="container navbar">
+      <a href="#hero" class="logo" id="logo-link">
+        <span class="logo-accent">&lt;</span>Sanjai<span class="logo-accent">.S /&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#timeline" class="nav-link">Deal Packages</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switch & Mobile Toggle Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="action-btn" aria-label="Toggle light/dark theme">
+          <!-- Sun Icon (for dark theme -> switches to light) -->
+          <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon (for light theme -> switches to dark) -->
+          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <button id="mobile-menu-btn" class="action-btn" aria-label="Toggle mobile menu">
+          <svg class="menu-open-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+          <svg class="menu-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge animate-fade-in">Available for Freelance & Full-time</span>
+          <h1 class="hero-title animate-slide-up">
+            Hi, I'm <span class="text-gradient">Sanjai Sankar</span>
+          </h1>
+          <h2 class="hero-subtitle animate-slide-up delay-1">
+            I'm a <span class="typing-text text-gradient">MERN Stack Developer</span><span class="typing-cursor">|</span>
+          </h2>
+          <p class="hero-text animate-slide-up delay-2">
+            Crafting high-performance, visually striking web experiences — where clean design meets solid engineering, built to help your business grow.
+          </p>
+          <div class="hero-ctas animate-slide-up delay-3">
+            <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline" id="hero-contact-btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper animate-zoom-in">
+          <div class="hero-blob-frame">
+            <img src="assets/avatar.jpg" alt="Sanjai Sankar - MERN Stack Developer Avatar" class="hero-img">
+          </div>
+          <!-- Float Badges -->
+          <div class="floating-badge badge-1">
+            <div class="badge-icon">⚛️</div>
+            <div class="badge-text">
+              <h4>MERN</h4>
+              <p>Developer</p>
+            </div>
+          </div>
+          <div class="floating-badge badge-2">
+            <div class="badge-icon">📈</div>
+            <div class="badge-text">
+              <h4>Marketing</h4>
+              <p>SEO & Growth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title text-center"><span class="text-gradient">About Me</span></h2>
+        <div class="about-grid">
+          <div class="about-image-card">
+            <div class="about-card-inner">
+              <img src="assets/avatar.jpg" alt="Sanjai Sankar Portrait" class="about-portrait">
+              <div class="about-glow"></div>
+            </div>
+          </div>
+          <div class="about-details">
+            <h3 class="about-subtitle">Crafting Digital Excellence</h3>
+            <p class="about-text">
+              I am a versatile MERN Stack Developer and Digital Marketer experienced in building dynamic, high-performance web applications — including custom platforms like the Velora Grand Resort site and Aksara Photography site.
+            </p>
+            <p class="about-text">
+              Skilled across the full stack in React, Node.js, Express, MongoDB, and SQL, I combine clean database architecture and robust API engineering with data-driven SEO and growth marketing campaigns to drive organic traffic, user engagement, and measurable business conversion.
+            </p>
+            
+            <!-- Quick Stats
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Exp.</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Completed Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Smiles</span>
+              </div>
+            </div> -->
+
+            <div class="about-actions">
+              <a href="assets/Sanjai_Sankar_Resume.pdf" class="btn btn-primary btn-with-icon" id="download-resume-btn" download="Sanjai_Sankar_Resume.pdf">
+                <span>Download Resume</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title text-center">My <span class="text-gradient">Technical Skills</span></h2>
+        <p class="section-subtitle text-center">A showcase of core technologies and marketing tools I leverage to build scalable full-stack MERN applications</p>
+        
+        <div class="skills-grid" id="skills-container">
+          <!-- Skill Card 1: MongoDB -->
+          <div class="skill-card" data-skill-percentage="88">
+            <div class="skill-glow" style="--skill-color: #47a248;"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box" style="--accent-color: #47a248;">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#47a248">
+                  <path d="M12 1.5C12 1.5 6 8.5 6 13.5C6 17.5 8.7 21 12 22.5C15.3 21 18 17.5 18 13.5C18 8.5 12 1.5 12 1.5ZM12.75 19.5C12.75 19.5 12.5 19.8 12 19.8C11.5 19.8 11.25 19.5 11.25 19.5V11.5C11.25 11.5 12 11 12.75 11.5V19.5Z"/>
+                </svg>
+              </div>
+              <div class="skill-progress-wrapper">
+                <svg class="circular-progress" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle" stroke-dasharray="0, 100" style="--skill-color: #47a248;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                </svg>
+                <span class="skill-percentage">88%</span>
+              </div>
+            </div>
+            <h3 class="skill-title">MongoDB</h3>
+            <p class="skill-desc">NoSQL database design, Mongoose schema modeling, aggregation pipelines, and data indexing.</p>
+          </div>
+
+          <!-- Skill Card 2: Express.js -->
+          <div class="skill-card" data-skill-percentage="90">
+            <div class="skill-glow" style="--skill-color: #00f2fe;"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box" style="--accent-color: #00f2fe;">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="8" x2="6.01" y2="8"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="skill-progress-wrapper">
+                <svg class="circular-progress" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle" stroke-dasharray="0, 100" style="--skill-color: #00f2fe;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                </svg>
+                <span class="skill-percentage">90%</span>
+              </div>
+            </div>
+            <h3 class="skill-title">Express.js</h3>
+            <p class="skill-desc">RESTful API backend architecture, custom middleware routing, JWT authentication, and security.</p>
+          </div>
+
+          <!-- Skill Card 3: React.js -->
+          <div class="skill-card" data-skill-percentage="94">
+            <div class="skill-glow" style="--skill-color: #00d8ff;"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box" style="--accent-color: #00d8ff;">
+                <!-- React SVG -->
+                <svg viewBox="-11.5 -10.23 23 20.47" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="0" cy="0" r="2.05" fill="#61dafb"/>
+                  <g stroke="#61dafb" stroke-width="1" fill="none">
+                    <ellipse rx="11" ry="4.2"/>
+                    <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
+                    <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="skill-progress-wrapper">
+                <svg class="circular-progress" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle" stroke-dasharray="0, 100" style="--skill-color: #00d8ff;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                </svg>
+                <span class="skill-percentage">94%</span>
+              </div>
+            </div>
+            <h3 class="skill-title">React.js</h3>
+            <p class="skill-desc">SPA component architecture, custom hooks, Redux/Context state management, and Virtual DOM.</p>
+          </div>
+
+          <!-- Skill Card 4: Node.js -->
+          <div class="skill-card" data-skill-percentage="92">
+            <div class="skill-glow" style="--skill-color: #339933;"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box" style="--accent-color: #339933;">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#339933" d="M12 1.8L2.5 7.3v11L12 23.7l9.5-5.5v-11L12 1.8zm6.5 14.8l-6.5 3.8-6.5-3.8V9.1L12 5.3l6.5 3.8v7.5z"/>
+                </svg>
+              </div>
+              <div class="skill-progress-wrapper">
+                <svg class="circular-progress" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle" stroke-dasharray="0, 100" style="--skill-color: #339933;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                </svg>
+                <span class="skill-percentage">92%</span>
+              </div>
+            </div>
+            <h3 class="skill-title">Node.js</h3>
+            <p class="skill-desc">Asynchronous event-driven server runtime, npm package ecosystem, and file system I/O streams.</p>
+          </div>
+
+          <!-- Skill Card 5: JavaScript -->
+          <div class="skill-card" data-skill-percentage="92">
+            <div class="skill-glow" style="--skill-color: #ffd600;"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box" style="--accent-color: #ffd600;">
+                <!-- JS SVG -->
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#ffd600" d="M0 0h24v24H0z"/>
+                  <path d="M20.5 12.3c-.6-.4-1.2-.6-2-.6-1 0-1.6.4-1.6 1s.4.8 1.4 1.2c1.7.6 2.7 1.4 2.7 3.2 0 1.8-1.4 3-3.6 3-1.6 0-2.8-.7-3.4-1.7l1.7-1.1c.4.7 1 1 1.7 1s1.2-.3 1.2-.8c0-.6-.4-.8-1.4-1.2-1.7-.7-2.7-1.4-2.7-3.1 0-1.8 1.4-3 3.4-3 1.4 0 2.4.6 3 1.4l-1.7 1.2zM12 7h2v13.5h-2v-1.9c-.6.8-1.5 2.1-3.6 2.1-2.4 0-4-1.8-4-4.5V7h2v9c0 1.6.9 2.5 2.2 2.5 1.5 0 2.2-.9 2.2-2.5V7z" fill="#000"/>
+                </svg>
+              </div>
+              <div class="skill-progress-wrapper">
+                <svg class="circular-progress" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle" stroke-dasharray="0, 100" style="--skill-color: #ffd600;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                </svg>
+                <span class="skill-percentage">92%</span>
+              </div>
+            </div>
+            <h3 class="skill-title">JavaScript (ES6+)</h3>
+            <p class="skill-desc">ES6+ syntax, Async/Await, Promises, functional programming logic, and DOM manipulation.</p>
+          </div>
+
+          <!-- Skill Card 6: Digital Marketing & SEO -->
+          <div class="skill-card" data-skill-percentage="89">
+            <div class="skill-glow" style="--skill-color: #a855f7;"></div>
+            <div class="skill-header">
+              <div class="skill-icon-box" style="--accent-color: #a855f7;">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <div class="skill-progress-wrapper">
+                <svg class="circular-progress" viewBox="0 0 36 36">
+                  <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle" stroke-dasharray="0, 100" style="--skill-color: #a855f7;" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                </svg>
+                <span class="skill-percentage">89%</span>
+              </div>
+            </div>
+            <h3 class="skill-title">Digital Marketing &amp; SEO</h3>
+            <p class="skill-desc">Technical SEO optimization, conversion tracking, keyword strategy, and web traffic analytics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title text-center">My Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle text-center">A curated collection of web apps and interactive platforms that I have developed recently</p>
+        
+        <!-- Filter Tabs -->
+        <div class="project-filters" id="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="app">Web Apps</button>
+          
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid-container">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="app">
+            <div class="project-img-container">
+              <img src="assets/project1.png" alt="Velora Grand Resort Screenshot" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://velora-grand-resort.vercel.app/" class="btn-project-link demo-btn" target="_blank" rel="noopener noreferrer" aria-label="View Live Demo of Velora Grand Resort">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                  <a href="https://github.com/sanjai049/velora_grand_resort" class="btn-project-link github-btn" target="_blank" rel="noopener noreferrer" aria-label="View GitHub Repository of Velora Grand Resort">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Web App</span>
+              <h3 class="project-title">Velora Grand Resort</h3>
+              <p class="project-desc">A luxury resort booking &amp; hospitality web application featuring immersive suite showcases, seamless reservation management, and a high-performance responsive UI.</p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Tailwind CSS</span>
+                <span>Node.js</span>
+                <span>Vercel</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://velora-grand-resort.vercel.app/" class="btn-text demo-text-btn" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                <a href="https://github.com/sanjai049/velora_grand_resort" class="btn-text github-text-btn" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="app">
+            <div class="project-img-container">
+              <img src="assets/project2.png" alt="Aksara Photography App Screenshot" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://aksara-photography-app.vercel.app/" class="btn-project-link demo-btn" target="_blank" rel="noopener noreferrer" aria-label="View Live Demo of Aksara Photography">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                  <a href="https://github.com/sanjai049/aksara_photography_app" class="btn-project-link github-btn" target="_blank" rel="noopener noreferrer" aria-label="View GitHub Repository of Aksara Photography">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Web App</span>
+              <h3 class="project-title">Aksara Photography</h3>
+              <p class="project-desc">A high-fidelity web platform for photography showcases. Features dynamic category gallery filtering, fluid image viewports, client booking forms, and clean visual layout.</p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>CSS Grid</span>
+                <span>Flexbox</span>
+                <span>Vercel</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://aksara-photography-app.vercel.app/" class="btn-text demo-text-btn" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                <a href="https://github.com/sanjai049/aksara_photography_app" class="btn-text github-text-btn" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Deal Packages Section -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <h2 class="section-title text-center">Services &amp; <span class="text-gradient">Deal Packages</span></h2>
+        <p class="section-subtitle text-center">Tailored development &amp; growth packages designed to launch your web application and scale your business</p>
+        
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <!-- Package 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">STARTER PACKAGE — ₹4,999</span>
+              <h3 class="timeline-title">Starter Web Package</h3>
+              <h4 class="timeline-sub">Ideal for Portfolios &amp; Small Businesses</h4>
+                <div class="timeline-certs">
+                <div class="cert-badge">
+                  <span class="cert-icon">🏠</span>
+                  <span class="cert-name">Home Page</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">ℹ️</span>
+                  <span class="cert-name">About Us Page</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">🛠️</span>
+                  <span class="cert-name">Services Page</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">📞</span>
+                  <span class="cert-name">Contact Page</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">💬</span>
+                  <span class="cert-name">WhatsApp Integration</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">📱</span>
+                  <span class="cert-name">Mobile Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">MOST POPULAR — ₹7,999</span>
+              <h3 class="timeline-title">Business Web Package</h3>
+              <h4 class="timeline-sub">Complete End-to-End Web Solution</h4>
+              <div class="timeline-certs">
+                <div class="cert-badge">
+                  <span class="cert-icon">📄</span>
+                  <span class="cert-name">Unlimited Pages</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">📱</span>
+                  <span class="cert-name">Responsive Design</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">🔍</span>
+                  <span class="cert-name">SEO Optimization</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">✉️</span>
+                  <span class="cert-name">Contact Forms</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">📍</span>
+                  <span class="cert-name">Google Maps Integration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">GROWTH SUITE — ₹8,999 to ₹14,999</span>
+              <h3 class="timeline-title">E-Commerce &amp; Growth Suite</h3>
+              <h4 class="timeline-sub">Complete Online Store &amp; Sales Scaling Platform</h4>
+              <div class="timeline-certs">
+                <div class="cert-badge">
+                  <span class="cert-icon">🛍️</span>
+                  <span class="cert-name">Product Listings</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">🛒</span>
+                  <span class="cert-name">Shopping Cart</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">💳</span>
+                  <span class="cert-name">Online Payment Gateway</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">📦</span>
+                  <span class="cert-name">Order Management</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">👤</span>
+                  <span class="cert-name">Customer Login</span>
+                </div>
+                <div class="cert-badge">
+                  <span class="cert-icon">📊</span>
+                  <span class="cert-name">Inventory Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title text-center">Let's Work <span class="text-gradient">Together</span></h2>
+        <p class="section-subtitle text-center">Need a new website, a custom web app, or help fixing an existing one? I'm here to make it happen — reach out and let's discuss your project.</p>
+        
+        <div class="contact-grid">
+          <!-- Contact details -->
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <!-- <p class="contact-info-desc">Need a custom website or app built from scratch, an existing platform optimized, or a data-driven growth campaign? I'm here to help — reach out for a free consultation and project estimate.</p> -->
+            
+            <div class="info-details">
+
+              <a href="tel:+919876543210" class="info-item" id="contact-phone-link">
+                <span class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </span>
+                <span class="info-text">+91 6381055294</span>
+              </a>
+
+              <a href="mailto:sanjaisankar049@gmail.com" class="info-item" id="contact-email-link">
+                <span class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </span>
+                <span class="info-text">sanjaisankar049@gmail.com</span>
+              </a>
+
+              <div class="info-item">
+                <span class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </span>
+                <span class="info-text">Namakkal, Tamil Nadu, India</span>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-channels">
+              <h4>Find me on:</h4>
+              <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sanjai's LinkedIn Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/sanjai049" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sanjai's GitHub Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Your Name</label>
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email Address</label>
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" required placeholder=" " rows="5"></textarea>
+                <label for="message">Your Message</label>
+                <span class="error-msg" id="message-error">Please write a brief message</span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full btn-with-icon" id="form-submit-btn">
+                <span class="btn-text-content">Send Message</span>
+                <span class="btn-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="send-icon"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="success-icon hidden"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <div class="spinner hidden"></div>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="logo">
+          <span class="logo-accent">&lt;</span>Sanjai<span class="logo-accent">.S /&gt;</span>
+        </a>
+        <p class="footer-tagline">Building clean, interactive, and high-performance website and apps.</p>
+      </div>
+      <div class="footer-center">
+        <p class="copyright-text">&copy; <span id="current-year">2026</span> Sanjai Sankar. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/sanjaisankar049" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+          <a href="https://github.com/sanjai049" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JS Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
